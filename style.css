@@ -3,6 +3,8 @@
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
+    max-width: 100%;
+    box-sizing: border-box;
  
 }
 
@@ -205,7 +207,7 @@
     height: 400px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+  
     
     
    
@@ -373,75 +375,79 @@
   }
 
   /* responsivesness  */
-  @media screen and (max-width: 768px){
-    .top-bar {
-        display: none; /* Hide the top bar */
-      }
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  /* Top Bar */
+  .top-bar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 10px; /* Add some space between links */
+    padding: 10px;
+  }
 
-
-  .name-bar {
-    flex-direction: column;
+  .top-bar a {
+    font-size: 14px; /* Adjust font size for smaller screens */
     text-align: center;
   }
+
+  /* Name Bar */
+  .name-bar {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .company-name {
+    font-size: 24px; /* Reduce font size */
+    margin: 0 auto; /* Center the company name */
+  }
+
   .nav-bar {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center navigation links */
+    gap: 10px; /* Space between links */
+  }
+
+  .nav1 {
+    font-size: 14px; /* Adjust font size */
+    padding: 5px 10px;
+  }
+
+  .dropdown {
+    position: static; /* Ensure dropdown adapts to screen width */
+  }
+
+  .dropdown-menu {
+    position: relative; /* Keep the dropdown menu inline */
+    text-align: center; /* Center dropdown items */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Top Bar */
+  .top-bar {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
 
-  .festive-offers {
-    flex-direction: column;
-  }
-  .festive{
-    flex-direction: column;
+  .top-bar a {
+    font-size: 12px; /* Further adjust font size */
   }
 
+  /* Name Bar */
+  .company-name {
+    font-size: 20px; /* Reduce font size for very small screens */
   }
 
-  @media screen and (max-width: 480px){
-    
-    *{
-        margin-top: 0%;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-    }
-      .company-name p {
-        font-size: 20px;
-      }
-
-      .festive h2 {
-        font-size: 20px;
-      }
-      .festive{
-        flex-direction: column;
-      }
-      .festive1{
-        border: red solid 2px;
-       
-    
-    }
-    .festive1 img{
-        width: 100%;
-        height: 100%;
-    }
-    .festive{
-       border: red solid 2px;
-       padding: 50px;
-    }
-    
-
-      .festive-offers {
-       display: column;
-      }
-    
-      .copyright {
-        font-size: 12px;
-        text-align: center;
-       
-
-        color: white;
-        padding: 10px;
-        background-color:#525151;
-     
-      }
+  .nav1 {
+    font-size: 12px;
   }
+
+  .nav-bar {
+    gap: 5px;
+  }
+
+
+  
+}
