@@ -1,0 +1,447 @@
+*{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+ 
+}
+
+.background {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh; /* Restricts the background to 50% of the viewport height */
+    background-attachment: fixed;
+   
+    background-size: cover;
+    background-position: center;
+    animation: image 3s infinite; /* Total duration = 5 seconds per image × 3 images */
+  }
+
+@keyframes image {
+    0% {
+      background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D');
+    }
+    100% {
+      background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg');
+    }
+  }
+  .company-name {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+    margin-left: 50px;
+
+    /* Radial Gradient for Text */
+    /* background: radial-gradient(circle, #c8ab2a, #9b870c); Radial gradient colors */
+    background: radial-gradient(circle, #ffffff, #c8ab2a, #9b870c); /* Added white at the center */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.top-bar{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  
+ background-color: #04050880; /* 50% transparency */;
+
+    
+  
+}
+
+
+#top1 {
+    margin-right: auto; /* Aligns the "SUBSCRIBE AND WIN" to the left */
+    cursor: pointer; /* Adds pointer cursor */
+    background-color: #dfd68d;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+#top1:hover {
+  color: red; /* Change text color on hover */
+  
+}
+#top2:hover {
+  color: red; /* Change text color on hover */
+  
+}
+
+.facebook-icon {
+  color: #4267B2; /* Facebook's blue color */
+  text-decoration: none; /* Remove underline */
+  font-size: 24px; /* Adjust icon size */
+ 
+  padding: 7px;
+}
+
+.facebook-icon:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  color: #365899; /* Slightly darker blue on hover */
+}
+.instagram-icon {
+  color: #E4405F; /* Instagram's gradient pink */
+  text-decoration: none;
+  font-size: 24px; /* Adjust icon size */
+
+  padding: 7px;
+}
+
+.instagram-icon:hover {
+  color: #C13584; /* Darker Instagram color on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+#top2 {
+    margin-left: 20px; /* Adds space between "VENUE HIRE" and "BOOK NOW" */
+    cursor: pointer; /* Adds pointer cursor */
+    background-color: #dfd68d;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+/* section 1 company name bar */
+
+.name-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #04050880; /* 50% transparency */;
+}
+
+
+ 
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #ebb0b0; */
+    /* background-color: #04050880; /* 50% transparency */
+    
+    padding: 10px;
+   
+   
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+ color: red;    
+   
+}
+
+/* Styling for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-button {
+    /* background-color: #ebb0b0; */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* border: red solid 2px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Dropdown arrow */
+.arrow {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    /* background-color: #ebb0b0; */
+   
+    min-width: 160px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Dropdown menu items */
+
+
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Rotate arrow on hover */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.festive-offers{
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+   
+}
+.festive1{
+
+       /* border: red solid 2px; */
+     
+
+}
+.festive1 img{
+    width: 100%;
+    height: 100%;
+}
+.festive{
+   /* border: red solid 2px; */
+   padding: 50px;
+   font-family: Garamond, serif;
+}
+
+
+
+
+/* footer */
+/* General Footer Styling */
+.foot {
+  display: flex;
+  
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+#twiiter{
+  background-color:#fff ;
+}
+
+/* Image */
+.foot a img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+.foot div {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+/* Section Headers and Links */
+.foot a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:  #d7cebc;
+  font-family: 'Trebuchet MS', sans-serif;
+
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.foot a:hover {
+  color: #e0ba80;
+}
+
+/* Lists */
+.foot ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.foot ul li {
+  font-size: 1em;
+  margin: 5px 0;
+  line-height: 1.8;
+}
+
+/* Newsletter Signup Form */
+.four1 {
+  font-size: 1.2em;
+  color:  #fff;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  
+}
+
+.four label {
+  font-size: 1em;
+  margin-bottom: 5px;
+  display: block;
+  color: #fff;
+}
+
+.four input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+}
+
+.four button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-color: goldenrod;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+
+.four button:hover {
+  background-color:  #e0ba80;
+}
+
+/* Social Media Icons */
+.fa-twitter {
+  font-size: 1.5em;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.fa-twitter:hover {
+  color: #0d8cd6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .foot {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .foot div {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .foot input,
+  .foot button {
+      width: 100%;
+  }
+}
+
+
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background-color:#525151;
+  }
+
+  /* responsivesness  */
+  @media screen and (max-width: 768px){
+    .top-bar {
+        display: none; /* Hide the top bar */
+      }
+
+
+  .name-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .festive-offers {
+    flex-direction: column;
+  }
+  .festive{
+    flex-direction: column;
+  }
+
+  }
+
+  @media screen and (max-width: 480px){
+    
+    *{
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+      .company-name p {
+        font-size: 20px;
+      }
+
+      .festive h2 {
+        font-size: 20px;
+      }
+      .festive{
+        flex-direction: column;
+      }
+      .festive1{
+        border: red solid 2px;
+       
+    
+    }
+    .festive1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .festive{
+       border: red solid 2px;
+       padding: 50px;
+    }
+    
+
+      .festive-offers {
+       display: column;
+      }
+    
+      .copyright {
+        font-size: 12px;
+        text-align: center;
+       
+
+        color: white;
+        padding: 10px;
+        background-color:#525151;
+     
+      }
+  }

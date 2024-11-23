@@ -1,0 +1,71 @@
+*{
+margin-left: 0%;
+margin-right: 0%;
+border: 2px solid red;
+}
+
+
+.background {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh; /* Restricts the background to 50% of the viewport height */
+    background-attachment: fixed;
+   
+    background-size: cover;
+    background-position: center;
+    animation: image 3s infinite; /* Total duration = 5 seconds per image × 3 images */
+  }
+
+@keyframes image {
+    0% {
+      background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D');
+    }
+    100% {
+      background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg');
+    }
+  }
+.container-fuild{
+    border: 2px solid red;
+    background-color: aqua;
+    
+    
+}
+
+.container-fuild a.top1 {
+    margin-left: 20px; /* Adds space between "VENUE HIRE" and "BOOK NOW" */
+    cursor: pointer; /* Adds pointer cursor */
+    background-color: #dfd68d;
+    padding: 8px;
+}
+.container-fuild a.top2{
+    margin-left: 20px; /* Adds space between "VENUE HIRE" and "BOOK NOW" */
+    cursor: pointer; /* Adds pointer cursor */
+    /* background-color: #dfd68d; */
+    padding: 8px;
+}
+
+
+
+.container-fluid.my-5 {
+    border: 2px solid blue;
+    /* margin-top: 25rem !important; */
+    
+
+
+
+
+
+}
+#sec2.container-fluid.my-5 {
+    border: 2px solid black;
+    margin-top: 0% !important;
+   
+    
+
+
+
+
+
+}
